@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/back"
+    tools:context=".DetailedViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlist Details"
+        android:textSize="32sp"
+        android:textColor="#37474F"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/alkatra_bold"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnDisplayPlaylist"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Display Playlist"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#009688"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/ar_one_sans_bold"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnCalcAverage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Average Rating"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#FF9800"
+            android:fontFamily="@font/ar_one_sans_bold"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvPlaylistDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press a button to see details."
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to Main Screen"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="#607D8B"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/ar_one_sans_bold"
+        android:textAllCaps="false"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlist"
+        android:textSize="42sp"
+        android:textColor="#37474F"
+        android:fontFamily="@font/alkatra_bold"
+        android:layout_marginBottom="64dp"/>
+
+    <Button
+        android:id="@+id/btnAddToPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Add to Playlist"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/ar_one_sans_bold"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnGoToDetailedView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="View Playlist"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/ar_one_sans_bold"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Exit App"
+        android:textSize="18sp"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/ar_one_sans_bold"
+        android:textAllCaps="false"/>
+</LinearLayout>
